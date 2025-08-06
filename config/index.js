@@ -1,0 +1,82 @@
+export const config = {
+  title: "3D Web Developer",
+  sections: ["home", "skills", "projects", "contact"],
+  home: {
+    title: "CREATIVE",
+    subtitle: "WEB DEVELOPER",
+  },
+  skills: [
+    { name: "React", icon: "/icons/skills/react-native.png", level: 90 },
+    { name: "JavaScript", icon: "/icons/skills/javascript.png", level: 90 },
+    { name: "TypeScript", icon: "/icons/skills/typescript.png", level: 90 },
+    { name: "Next.js", icon: "/icons/skills/next.png", level: 85 },
+    { name: "Node.js", icon: "/icons/skills/nodejs.png", level: 80 },
+    { name: "Express", icon: "/icons/skills/express.png", level: 80 },
+    { name: "Prisma", icon: "/icons/skills/prisma.png", level: 80 },
+    { name: "PostgreSQL", icon: "/icons/skills/postgresql.png", level: 75 },
+    { name: "MongoDB", icon: "/icons/skills/mongodb.png", level: 75 },
+    { name: "Tailwind CSS", icon: "/icons/skills/tailwindcss.png", level: 90 },
+    { name: "Three.js", icon: "/icons/skills/threejs.png", level: 85 },
+    { name: "React Three Fiber", icon: "/icons/skills/r3f.png", level: 85 },
+    { name: "GLSL", icon: "/icons/skills/glsl.png", level: 60 },
+    { name: "Docker", icon: "/icons/skills/docker.png", level: 60 },
+    { name: "Jest", icon: "/icons/skills/jest.png", level: 60 },
+    { name: "GSAP", icon: "/icons/skills/gsap.png", level: 80 },
+    { name: "WebSockets", icon: "/icons/skills/websockets.png", level: 75 },
+    { name: "GraphQl", icon: "/icons/skills/graphql.png", level: 70 },
+    { name: "Zod", icon: "/icons/skills/zod.png", level: 70 },
+  ],
+  projects: [
+    {
+      name: "Dissolve tutorial",
+      description: "Create a dissolve effect with React Three Fiber",
+      image: "projects/project1.jpg",
+      link: "https://www.youtube.com/watch?v=ma9t7HAOZRg",
+    },
+    {
+      name: "Transition effect",
+      description: "Shader based transition effect",
+      image: "projects/project2.jpg",
+      link: "https://www.youtube.com/watch?v=SOF7GBmC6gE",
+    },
+    {
+      name: "Portals",
+      description: "Create portals with React Three Fiber",
+      image: "projects/project3.jpg",
+      link: "https://www.youtube.com/watch?v=2W_VR92Pqgs",
+    },
+    {
+      name: "3D Portfolio",
+      description: "Learn how to build a 3D portfolio",
+      image: "projects/project4.jpg",
+      link: "https://www.youtube.com/watch?v=pGMKIyALcK0",
+    },
+  ],
+  contact: {
+    name: "Jesús de la Fuente",
+    address: "Segovia, Spain",
+    socials: [
+      {
+        name: "linkedin",
+        link: "https://www.linkedin.com/in/jesus-de-la-fuente-b5325047/",
+        image: "/icons/socials/linkedin.png",
+      },
+      {
+        name: "github",
+        link: "https://github.com/delafuentej",
+        image: "/icons/socials/github.png",
+      },
+      {
+        name: "codepen",
+        link: "https://codepen.io/JFL1981",
+        image: "/icons/socials/codepen.png",
+      },
+      {
+        name: "mail",
+        link: "contact@gmail.com",
+        image: "/icons/socials/email.png",
+      },
+    ],
+    mail: "contact@gmail.com",
+  },
+};
