@@ -10,10 +10,13 @@ import { Avatar } from "./Avatar";
 import { Home, Skills, Projects, Contact } from "../sections";
 import { config } from "../../config";
 import { useMobile } from "../hooks/useMobile";
+import { atom, useAtom } from "jotai";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const SECTIONS_DISTANCE = 10;
+
+export const sectionsAtom = atom(config.sections[0]);
 
 const Experience = () => {
   const { isMobile, scaleFactor } = useMobile();
@@ -33,7 +36,7 @@ const Experience = () => {
     contact: contactRef,
   };
 
-  const [section, setSection] = useState(config.sections[0]);
+  const [section, setSection] = useAtom(sectionsAtom);
   const [previousSection, setPreviousSection] = useState(null);
 
   useFrame(() => {
